@@ -1,0 +1,44 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav.open {
+  width: 300px;
+}
+
+@media (max-width: 900px) {
+  .sidenav.open {
+    width: 100%;
+  }
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 30; /* Ensure it’s above other sidenav content */
+  padding: 10px; /* Larger clickable area */
+}
+
+.closebtn:hover {
+  color: #00ccff; /* Match theme */
+}
+
+.sidenav-content {
+  color: #fff;
+  padding: 0 20px;
+  font-size: 20px;
+}

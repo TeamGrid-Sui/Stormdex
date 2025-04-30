@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+.nav-item a{
+    color: white !important;
+}
+body{
+    background: linear-gradient(
+        to bottom right,
+        #000000,
+        #0a0a0a 20%,
+        #1a1a1a 40%,
+        #2d0a47 60%,
+        #5B1398 80%,
+        #000000
+      );
+ font-family: 'Space Grotesk', sans-serif;
+}
+.navbar{
+    background-color: transparent !important;
+    border: 1px solid rebeccapurple !important;
+    margin: 2rem 3rem;
+    border-radius: 15px;
+}
+.dropdown-menu{
+    background-color: #111;
+    color: white;
+}
+#logo{
+    color: white;
+}
+.dropdown-menu a:hover{
+    background-color: rgb(66, 66, 192);
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.explore{
+    color: white;
+    width: 37%;
+    text-align: center;
+    margin: 9rem auto;
+}
+.btn{
+    background-color:  #5B139B;
+    color: white;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+/* .btn:hover>{
+    background-color: transparent;
+    border: 1px solid blue;
+    color: white;
+} */
+/* glow effect */
+.glow-button {
+    background-color: #5B139B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(91, 19, 155, 0);
+    animation: glow-pulse 2s infinite;
+  }
+  
+  @keyframes glow-pulse {
+    0% {
+      box-shadow: 0 0 5px rgba(91, 19, 155, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 50px rgba(91, 19, 155, 0.9);
+    }
+    100% {
+      box-shadow: 0 0 70px rgba(91, 19, 155, 0.7);
+    }
+  }
+  
+  /* Optional hover effect */
+  .glow-button:hover {
+    transform: scale(1.05);
+  }
+
+h1,h2,h3{
+    font-size: 3rem;
+    margin: 0 auto;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: -0.5px;
+}
+.explore button{
+    margin-top: 2rem;
+    width: 40%;
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.unlockdiv{
+    margin: 4rem 4rem;
+    text-align: center;
+}
+#flex2{
+    display: flex;
+    gap: 5rem;
+}
+.flex1{
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+.flex1div img{
+    border-radius: 10px
+}
+.flex1div{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.flex1div div{
+    /* border-left: 7px solid rgb(66, 66, 192); */
+    border-left: 7px solid #5B139B;
+    padding-left: 9px;
+}
+#improveUX{
+    margin-left: 2rem;
+    padding: 0 4rem;
+}
+
+#patty2img{
+    width: 350px;
+}
+#icons{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    font-size: 2rem;
+
+}
+#icons a{
+    color: black;
+}
+/* Position and style the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    color: white;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+@media (max-width:970px){
+    #improveUX{
+        padding: 0;
+        margin-left: 0;
+    }
+}
+@media (max-width:800px){
+    .unlockdiv{
+        margin: 2rem;
+    }
+    .unlockdiv h1{
+        font-size: 2.5rem;
+    }
+    #patty2img{
+        width: 100%;
+    }
+    #icons{
+        gap: 2rem;
+    }
+    .explore{
+        width: 100%;
+        text-align: center;
+        margin: 6rem auto;
+    }
+    #flex2{
+        margin-left: -32px;
+    }
+    .flex1{
+        flex-wrap: wrap;
+    }
+
+}

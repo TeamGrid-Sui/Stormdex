@@ -1,0 +1,2124 @@
+{
+  "data": [
+    {
+      "id": "sui-network_0x08eee26dd67f74dfd5cc56a84a41bac720f0a31b5ac8e12b088eaf753308b18d",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.0000206918481883685",
+        "base_token_price_native_currency": "0.00000989164777267217",
+        "quote_token_price_usd": "2.09",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.000009891647773",
+        "quote_token_price_base_token": "101095.391079605",
+        "address": "0x08eee26dd67f74dfd5cc56a84a41bac720f0a31b5ac8e12b088eaf753308b18d",
+        "name": "COOCHIE / SUI 0.01%",
+        "pool_created_at": "2025-04-16T06:10:38Z",
+        "fdv_usd": "20691.8481883685",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "1.34",
+          "m15": "3.6",
+          "m30": "3.6",
+          "h1": "3.6",
+          "h6": "3.6",
+          "h24": "3.6"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 21,
+            "sells": 7,
+            "buyers": 20,
+            "sellers": 7
+          },
+          "m15": {
+            "buys": 73,
+            "sells": 31,
+            "buyers": 67,
+            "sellers": 31
+          },
+          "m30": {
+            "buys": 73,
+            "sells": 31,
+            "buyers": 67,
+            "sellers": 31
+          },
+          "h1": {
+            "buys": 73,
+            "sells": 31,
+            "buyers": 67,
+            "sellers": 31
+          },
+          "h6": {
+            "buys": 73,
+            "sells": 31,
+            "buyers": 67,
+            "sellers": 31
+          },
+          "h24": {
+            "buys": 73,
+            "sells": 31,
+            "buyers": 67,
+            "sellers": 31
+          }
+        },
+        "volume_usd": {
+          "m5": "224.3914301648",
+          "m15": "649.9061040681",
+          "m30": "649.9061040681",
+          "h1": "649.9061040681",
+          "h6": "649.9061040681",
+          "h24": "649.9061040681"
+        },
+        "reserve_in_usd": "32584.6116"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0x9942d28b9db64aea8a6641194387109b04a2f58f4d3054b899b424382976b70b::coochie::COOCHIE",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0xaacd794d060fceb273fd7febe8cf3695038a27cd04363da358f0004c0e283367",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "1.13991450385795",
+        "base_token_price_native_currency": "0.546108735805377",
+        "quote_token_price_usd": "1.00236757394124",
+        "quote_token_price_native_currency": "0.48190748747175",
+        "base_token_price_quote_token": "1.1332231808",
+        "quote_token_price_base_token": "0.8824387084",
+        "address": "0xaacd794d060fceb273fd7febe8cf3695038a27cd04363da358f0004c0e283367",
+        "name": "ALPHA / USDC 0.05%",
+        "pool_created_at": "2025-04-16T04:59:19Z",
+        "fdv_usd": "11399145.0385795",
+        "market_cap_usd": "11361408.4166513",
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "-0.43",
+          "h6": "-0.08",
+          "h24": "-0.08"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 2,
+            "buyers": 0,
+            "sellers": 2
+          },
+          "h6": {
+            "buys": 16,
+            "sells": 17,
+            "buyers": 13,
+            "sellers": 10
+          },
+          "h24": {
+            "buys": 16,
+            "sells": 17,
+            "buyers": 13,
+            "sellers": 10
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "2.3947351954",
+          "h6": "1424.6556997643",
+          "h24": "1424.6556997643"
+        },
+        "reserve_in_usd": "54846.1818"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0xfe3afec26c59e874f3c1d60b8203cb3852d2bb2aa415df9548b8d688e6683f93::alpha::ALPHA",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0xa0525c52cb9c7cdad1b394919474fec112d1d10d11178c95518a7b6fe69adeb2",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.000000849326022550387",
+        "base_token_price_native_currency": "0.000000397967411630761",
+        "quote_token_price_usd": "0.998438496039342",
+        "quote_token_price_native_currency": "0.475446902875877",
+        "base_token_price_quote_token": "0.0000008370386035",
+        "quote_token_price_base_token": "1194688.02967466",
+        "address": "0xa0525c52cb9c7cdad1b394919474fec112d1d10d11178c95518a7b6fe69adeb2",
+        "name": "STRAT / USDC 0.25%",
+        "pool_created_at": "2025-04-16T04:41:17Z",
+        "fdv_usd": "8493.2602255039",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "2.6",
+          "h24": "2.6"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 2,
+            "sells": 0,
+            "buyers": 2,
+            "sellers": 0
+          },
+          "h24": {
+            "buys": 2,
+            "sells": 0,
+            "buyers": 2,
+            "sellers": 0
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "1.567543591",
+          "h24": "1.567543591"
+        },
+        "reserve_in_usd": "139.1017"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0x343b9a28b9b187a8de956eedd9a1284698440c90854d5854383bebe3b01d0663::strat::STRAT",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0x4301aeb6d0ce182b4bb380c15a4cc175bf60b71a4aacebd4f42750cd8b1a92eb",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.00066559160477327",
+        "base_token_price_native_currency": "0.0000211500578081227",
+        "quote_token_price_usd": "2.09",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.00002115005781",
+        "quote_token_price_base_token": "47281.1946459999",
+        "address": "0x4301aeb6d0ce182b4bb380c15a4cc175bf60b71a4aacebd4f42750cd8b1a92eb",
+        "name": "GROKSTUDIO / SUI 0.01%",
+        "pool_created_at": "2025-04-16T04:20:11Z",
+        "fdv_usd": "665591.60477327",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "1708.01",
+          "h1": "2091.03",
+          "h6": "3161.39",
+          "h24": "3161.39"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 1,
+            "sells": 0,
+            "buyers": 1,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 27,
+            "sells": 23,
+            "buyers": 27,
+            "sellers": 20
+          },
+          "h1": {
+            "buys": 137,
+            "sells": 97,
+            "buyers": 125,
+            "sellers": 85
+          },
+          "h6": {
+            "buys": 457,
+            "sells": 283,
+            "buyers": 407,
+            "sellers": 256
+          },
+          "h24": {
+            "buys": 457,
+            "sells": 283,
+            "buyers": 407,
+            "sellers": 256
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.209",
+          "m30": "1839.0797747446",
+          "h1": "10432.9424113204",
+          "h6": "21239.466141469",
+          "h24": "21239.466141469"
+        },
+        "reserve_in_usd": "1.0014"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0xae9c887fcb56d71e3cf491abb6a54dde3d186ee4e3c75ff910e26c1c35352b66::grokstudio::GROKSTUDIO",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0xb99d0b6549fbe3f44b1dfd60d753153699cae5b4136a6d0f26ae702426e41646",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.000108864896708855",
+        "base_token_price_native_currency": "0.0000520687264785564",
+        "quote_token_price_usd": "2.09",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.00005206872648",
+        "quote_token_price_base_token": "19205.3861815083",
+        "address": "0xb99d0b6549fbe3f44b1dfd60d753153699cae5b4136a6d0f26ae702426e41646",
+        "name": "SPENCER / SUI 0.01%",
+        "pool_created_at": "2025-04-16T04:12:26Z",
+        "fdv_usd": "108864.896708855",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0.42",
+          "m15": "3.82",
+          "m30": "7.51",
+          "h1": "18.57",
+          "h6": "64.76",
+          "h24": "64.76"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 15,
+            "sells": 13,
+            "buyers": 15,
+            "sellers": 13
+          },
+          "m15": {
+            "buys": 69,
+            "sells": 38,
+            "buyers": 65,
+            "sellers": 38
+          },
+          "m30": {
+            "buys": 144,
+            "sells": 75,
+            "buyers": 127,
+            "sellers": 74
+          },
+          "h1": {
+            "buys": 307,
+            "sells": 149,
+            "buyers": 254,
+            "sellers": 143
+          },
+          "h6": {
+            "buys": 735,
+            "sells": 335,
+            "buyers": 614,
+            "sellers": 312
+          },
+          "h24": {
+            "buys": 735,
+            "sells": 335,
+            "buyers": 614,
+            "sellers": 312
+          }
+        },
+        "volume_usd": {
+          "m5": "858.9305423236",
+          "m15": "3324.7769064062",
+          "m30": "6787.3359051539",
+          "h1": "14230.032055328",
+          "h6": "35009.7855032057",
+          "h24": "35009.7855032057"
+        },
+        "reserve_in_usd": "135229.3376"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0xf6262a1bbd860dce8cf24542ecc30eb0818cdd59d2fcdd9c0da331e0d40d85b8::spencer::SPENCER",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0xc519d1321ecf34dad33b5e6df78970bc2ecef4bb9310b24505ab97bb3ba43394",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.000000004280664822",
+        "base_token_price_native_currency": "0.00000000728840925036283",
+        "quote_token_price_usd": "2.1",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.00000000728840925",
+        "quote_token_price_base_token": "137204150.542208",
+        "address": "0xc519d1321ecf34dad33b5e6df78970bc2ecef4bb9310b24505ab97bb3ba43394",
+        "name": "STG_08 / SUI 1%",
+        "pool_created_at": "2025-04-16T03:38:41Z",
+        "fdv_usd": "4.280664822",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "-87.15",
+          "h24": "-87.15"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 17,
+            "sells": 18,
+            "buyers": 17,
+            "sellers": 10
+          },
+          "h24": {
+            "buys": 17,
+            "sells": 18,
+            "buyers": 17,
+            "sellers": 10
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "23.7335243208",
+          "h24": "23.7335243208"
+        },
+        "reserve_in_usd": "2.6373"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0x5df2dbcace078f6a0ada04cfac61687c60cb677b406cab6d5ceee5024ca9350b::stg_08::STG_08",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0x4f665396e49a6a9f233580eed6dfdeff9b5e1054094f27dbb2bd568bdc4e75d5",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.401592032992736",
+        "base_token_price_native_currency": "0.197748355974644",
+        "quote_token_price_usd": "0.998064790666516",
+        "quote_token_price_native_currency": "0.475268947936436",
+        "base_token_price_quote_token": "0.4160767431",
+        "quote_token_price_base_token": "2.4034027772",
+        "address": "0x4f665396e49a6a9f233580eed6dfdeff9b5e1054094f27dbb2bd568bdc4e75d5",
+        "name": "WAL / USDC 0.05%",
+        "pool_created_at": "2025-04-16T03:05:50Z",
+        "fdv_usd": "2007960164.96368",
+        "market_cap_usd": "524788300.125",
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "0.27",
+          "h24": "0.27"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 2,
+            "sells": 0,
+            "buyers": 2,
+            "sellers": 0
+          },
+          "h24": {
+            "buys": 2,
+            "sells": 0,
+            "buyers": 2,
+            "sellers": 0
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "746.5160619995",
+          "h24": "746.5160619995"
+        },
+        "reserve_in_usd": "1358.369"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0x33ba747007cfd19efa966edf15bcba59d2701ea314105a477cde897091ea0100",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "455.034402067465",
+        "base_token_price_native_currency": "0.0",
+        "quote_token_price_usd": "2.1",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.0",
+        "quote_token_price_base_token": null,
+        "address": "0x33ba747007cfd19efa966edf15bcba59d2701ea314105a477cde897091ea0100",
+        "name": "Qd / SUI 0.25%",
+        "pool_created_at": "2025-04-16T02:43:38Z",
+        "fdv_usd": "4550344020674650.0",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "0",
+          "h24": "0"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 0,
+            "sells": 1,
+            "buyers": 0,
+            "sellers": 1
+          },
+          "h24": {
+            "buys": 0,
+            "sells": 1,
+            "buyers": 0,
+            "sellers": 1
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "1.2545298465",
+          "h24": "1.2545298465"
+        },
+        "reserve_in_usd": "0.0108"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0x21138163470dfcac8642b2a210dd5e60a48e66e99ed96ad87352e7741fa27b25::qd::QD",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0x192dff9c6ef3dfb469845f34d54f4cee2cd978bae8d535a9b673de7bc9c6d81c",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "90.9090909090909",
+        "base_token_price_native_currency": "0.0000189846798652692",
+        "quote_token_price_usd": "2.1",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.00001898467987",
+        "quote_token_price_base_token": "52674.0512400955",
+        "address": "0x192dff9c6ef3dfb469845f34d54f4cee2cd978bae8d535a9b673de7bc9c6d81c",
+        "name": "fitcoin / SUI 0.01%",
+        "pool_created_at": "2025-04-16T02:28:48Z",
+        "fdv_usd": "90909090909.0909",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "451564818.81",
+          "h24": "451564818.81"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 431,
+            "sells": 264,
+            "buyers": 366,
+            "sellers": 236
+          },
+          "h24": {
+            "buys": 431,
+            "sells": 264,
+            "buyers": 366,
+            "sellers": 236
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "21469.8456811029",
+          "h24": "21469.8456811029"
+        },
+        "reserve_in_usd": "0.5598"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0xdf18c662f6d463a75d45848d366a3b339db97b10d62abdfd6584068df8e2b161::fitcoin::FITCOIN",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0xb6d7a12aed942360fbed5af732223746f10571b766431fa6c0ccf895a13e02e3",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "1.00291031556439",
+        "base_token_price_native_currency": "0.469801200094879047658509623566",
+        "quote_token_price_usd": "1.00341704117018",
+        "quote_token_price_native_currency": "0.477817638652465",
+        "base_token_price_quote_token": "0.9832228074",
+        "quote_token_price_base_token": "1.0170634697",
+        "address": "0xb6d7a12aed942360fbed5af732223746f10571b766431fa6c0ccf895a13e02e3",
+        "name": "PAF / USDC",
+        "pool_created_at": "2025-04-16T02:28:09Z",
+        "fdv_usd": "100291031.556439",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "0.06",
+          "h24": "0.06"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 1,
+            "sells": 1,
+            "buyers": 1,
+            "sellers": 1
+          },
+          "h24": {
+            "buys": 1,
+            "sells": 1,
+            "buyers": 1,
+            "sellers": 1
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "1.0030416133",
+          "h24": "1.0030416133"
+        },
+        "reserve_in_usd": "9671.4755"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0xf077de46d7613e4d2bdc6b70330ba61f2287b49e8328eadf7dc445f302250b36::paf::PAF",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "turbos-finance",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0xb20f5e40e21e29a786a83eb306599d06e37cd47d34fe49cf0930d7292f335b59",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.000819751112692499",
+        "base_token_price_native_currency": "0.000390357672710714",
+        "quote_token_price_usd": "0.000908227441152866",
+        "quote_token_price_native_currency": "0.000432489257691841",
+        "base_token_price_quote_token": "0.9025835111",
+        "quote_token_price_base_token": "1.1079307208",
+        "address": "0xb20f5e40e21e29a786a83eb306599d06e37cd47d34fe49cf0930d7292f335b59",
+        "name": "ROCK / TURBOS",
+        "pool_created_at": "2025-04-16T02:27:00Z",
+        "fdv_usd": "819751.112692499",
+        "market_cap_usd": "829348.6378",
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "0.04",
+          "h24": "0.04"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 0,
+            "sells": 2,
+            "buyers": 0,
+            "sellers": 2
+          },
+          "h24": {
+            "buys": 0,
+            "sells": 2,
+            "buyers": 0,
+            "sellers": 2
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "4.164813391",
+          "h24": "4.164813391"
+        },
+        "reserve_in_usd": "188.1068"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0xb4bc93ad1a07fe47943fc4d776fed31ce31923acb5bc9f92d2cab14d01fc06a4::ROCK::ROCK",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x5d1f47ea69bb0de31c313d7acf89b890dbb8991ea8e03c6c355171f84bb1ba4a::turbos::TURBOS",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "turbos-finance",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0xea2653dd3c144203c86f075236de46f3ef5d8ae67bdb4ff4ea28ad02beee1d5b",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.0000215935008378632",
+        "base_token_price_native_currency": "0.000000901589080964126",
+        "quote_token_price_usd": "2.08",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.000000901589081",
+        "quote_token_price_base_token": "1109152.74054854",
+        "address": "0xea2653dd3c144203c86f075236de46f3ef5d8ae67bdb4ff4ea28ad02beee1d5b",
+        "name": "TROLL / SUI 0.01%",
+        "pool_created_at": "2025-04-16T01:14:47Z",
+        "fdv_usd": "21593.5008378632",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "903.07",
+          "h6": "-67.14",
+          "h24": "-67.14"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 1,
+            "buyers": 0,
+            "sellers": 1
+          },
+          "h1": {
+            "buys": 1,
+            "sells": 2,
+            "buyers": 1,
+            "sellers": 2
+          },
+          "h6": {
+            "buys": 935,
+            "sells": 435,
+            "buyers": 766,
+            "sellers": 403
+          },
+          "h24": {
+            "buys": 935,
+            "sells": 435,
+            "buyers": 766,
+            "sellers": 403
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.01571372816",
+          "h1": "0.06521295248",
+          "h6": "43714.8782282086",
+          "h24": "43714.8782282086"
+        },
+        "reserve_in_usd": "1.2146"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0x165c645488e7b780a6af94558666188580320d0b0082e7a5b23e7e97c9efbf7c::troll::TROLL",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0x7d7199cfd661555014e4ddc3d5fdead4aa3c05b77d1c6998aee16a7696f4230b",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "1.04987633333333",
+        "base_token_price_native_currency": "0.499941111111111",
+        "quote_token_price_usd": "2.1",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.4999411111",
+        "quote_token_price_base_token": "2.000235583",
+        "address": "0x7d7199cfd661555014e4ddc3d5fdead4aa3c05b77d1c6998aee16a7696f4230b",
+        "name": "SHIA / SUI 0.01%",
+        "pool_created_at": "2025-04-16T00:50:41Z",
+        "fdv_usd": "1049876333.33333",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "5276012.65",
+          "h24": "5276012.65"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 448,
+            "sells": 258,
+            "buyers": 380,
+            "sellers": 230
+          },
+          "h24": {
+            "buys": 448,
+            "sells": 258,
+            "buyers": 380,
+            "sellers": 230
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "21087.8406098436",
+          "h24": "21087.8406098436"
+        },
+        "reserve_in_usd": "0.5488"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0x6a43338048ffd15c443fa43c3bc0dd55af048bff21760a573e0e02315332a1e4::shia::SHIA",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0x9272f91eac60fbb60876f251cf505764a0428731b8745d6ec95bb17317460918",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.000488754155880174",
+        "base_token_price_native_currency": "0.000269510218835135",
+        "quote_token_price_usd": "2.08",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.0002695102188",
+        "quote_token_price_base_token": "3710.4344478",
+        "address": "0x9272f91eac60fbb60876f251cf505764a0428731b8745d6ec95bb17317460918",
+        "name": "SKINS / SUI 0.01%",
+        "pool_created_at": "2025-04-16T00:04:42Z",
+        "fdv_usd": "488754.155880174",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "223.27",
+          "h6": "1047.81",
+          "h24": "1756.24"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 2,
+            "sells": 1,
+            "buyers": 1,
+            "sellers": 1
+          },
+          "h6": {
+            "buys": 766,
+            "sells": 417,
+            "buyers": 598,
+            "sellers": 376
+          },
+          "h24": {
+            "buys": 912,
+            "sells": 496,
+            "buyers": 715,
+            "sellers": 444
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.06702469904",
+          "h6": "25170.3402016388",
+          "h24": "36075.6888469523"
+        },
+        "reserve_in_usd": "1.0625"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0x3a22333c7b3176dd2b1283366b0f09eb22da532f1160af30d6dbd9a8f4b0bfc0::skins::SKINS",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0x302f828974d79d1c68a6cc3060dc88ab6ed1b74828a9033d582a295dd9ed821a",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "90.0432900432901",
+        "base_token_price_native_currency": "0.0000188402375460655",
+        "quote_token_price_usd": "2.08",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.00001884023755",
+        "quote_token_price_base_token": "53077.8870253064",
+        "address": "0x302f828974d79d1c68a6cc3060dc88ab6ed1b74828a9033d582a295dd9ed821a",
+        "name": "REVI / SUI 0.01%",
+        "pool_created_at": "2025-04-15T23:16:43Z",
+        "fdv_usd": "90043290043.2901",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "379259836.04",
+          "h24": "445637059.42"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 225,
+            "sells": 129,
+            "buyers": 189,
+            "sellers": 122
+          },
+          "h24": {
+            "buys": 438,
+            "sells": 237,
+            "buyers": 374,
+            "sellers": 223
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "14948.2347119824",
+          "h24": "19118.0844579777"
+        },
+        "reserve_in_usd": "0.5133"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0xe12338ddc8a3b0b4301b2bf9f712d4c745e3b7dba1c0bdc1d274b7e7d85ee3f3::revi::REVI",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0xf5f7b956094fcb83b3ca11446e09a8759a907cbd8c6360cf7134a0d9c3517156",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.000108935127006997",
+        "base_token_price_native_currency": "0.000051927681263037",
+        "quote_token_price_usd": "2.09",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.00005192768126",
+        "quote_token_price_base_token": "19257.551573207",
+        "address": "0xf5f7b956094fcb83b3ca11446e09a8759a907cbd8c6360cf7134a0d9c3517156",
+        "name": "XAI / SUI",
+        "pool_created_at": "2025-04-15T22:56:25Z",
+        "fdv_usd": "108935.127006997",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "20.38",
+          "h24": "65.31"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 373,
+            "sells": 166,
+            "buyers": 300,
+            "sellers": 152
+          },
+          "h24": {
+            "buys": 754,
+            "sells": 303,
+            "buyers": 593,
+            "sellers": 275
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "16278.3617117925",
+          "h24": "34250.5147623376"
+        },
+        "reserve_in_usd": "134588.2254"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0x5ece5fae4facca0e691f2d77b41e335afed589e303b710a0d6c59fd6b6da4ddb::xai::XAI",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "turbos-finance",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0xd9bdd680282de8e993eb6141ff2630af0c0c25b3787162c73c03ff0361d7e9ec",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "0.0000631455816686799",
+        "base_token_price_native_currency": "0.0000301500694947378",
+        "quote_token_price_usd": "2.09",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.00003015006949",
+        "quote_token_price_base_token": "33167.4194042748",
+        "address": "0xd9bdd680282de8e993eb6141ff2630af0c0c25b3787162c73c03ff0361d7e9ec",
+        "name": "MUGIFY / SUI 0.01%",
+        "pool_created_at": "2025-04-15T22:47:55Z",
+        "fdv_usd": "63145.5816686799",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "0",
+          "h24": "169.2"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h24": {
+            "buys": 690,
+            "sells": 348,
+            "buyers": 566,
+            "sellers": 322
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "0.0",
+          "h24": "28198.230326998"
+        },
+        "reserve_in_usd": "68629.8155"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0xd7960d99df68b146f321c8ed52db36634658aed8873a5c115cc985363227fa89::mugify::MUGIFY",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0xd482395f2a39202183c54bfbd75a7a3dfeb2d41e30a7c9b1ac9402ad13db399b",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "2.10021422185063",
+        "base_token_price_native_currency": "0.0000190191776504129",
+        "quote_token_price_usd": "2.1",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "0.00001901917765",
+        "quote_token_price_base_token": "52578.5088283399",
+        "address": "0xd482395f2a39202183c54bfbd75a7a3dfeb2d41e30a7c9b1ac9402ad13db399b",
+        "name": "SUIEY / SUI 0.01%",
+        "pool_created_at": "2025-04-15T21:34:38Z",
+        "fdv_usd": "2100214221.85063",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "0",
+          "h24": "10340168.92"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h24": {
+            "buys": 456,
+            "sells": 238,
+            "buyers": 384,
+            "sellers": 217
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "0.0",
+          "h24": "18968.0050654498"
+        },
+        "reserve_in_usd": "0.509"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0xe06971d271f5691ddeddd617416aa991438caba8eec79ba66cdbe5dce0f235c7::suiey::SUIEY",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0x59097625b2e4d4db1d0d6a5e99687deb021c9376320891dad906022584552161",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "2.0997962991852",
+        "base_token_price_native_currency": "1.00010501102616",
+        "quote_token_price_usd": "2.1",
+        "quote_token_price_native_currency": "1.0",
+        "base_token_price_quote_token": "1.000105011",
+        "quote_token_price_base_token": "0.999895",
+        "address": "0x59097625b2e4d4db1d0d6a5e99687deb021c9376320891dad906022584552161",
+        "name": "RICHIE / SUI 0.01%",
+        "pool_created_at": "2025-04-15T20:03:28Z",
+        "fdv_usd": "2099796299.1852",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "0",
+          "h24": "3162550.34"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h24": {
+            "buys": 949,
+            "sells": 432,
+            "buyers": 813,
+            "sellers": 404
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "0.0",
+          "h24": "43672.5345387179"
+        },
+        "reserve_in_usd": "1.1855"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0x82f164c1bb5b3ecad0a3c8c705802abb783d7b77b0f69d090cfd1c93795c0ac6::richie::RICHIE",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0x2::sui::SUI",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    },
+    {
+      "id": "sui-network_0x6b830e274c43b5415dc3c81fce0800b2c0824dd7e96516570664733179491fc6",
+      "type": "pool",
+      "attributes": {
+        "base_token_price_usd": "1.00282311253509",
+        "base_token_price_native_currency": "0.475511017415916",
+        "quote_token_price_usd": "1.00269770143947",
+        "quote_token_price_native_currency": "0.477475095923558",
+        "base_token_price_quote_token": "0.995886532",
+        "quote_token_price_base_token": "1.0041304585",
+        "address": "0x6b830e274c43b5415dc3c81fce0800b2c0824dd7e96516570664733179491fc6",
+        "name": "PAF / USDC 0.01%",
+        "pool_created_at": "2025-04-15T20:02:59Z",
+        "fdv_usd": "100282311.253509",
+        "market_cap_usd": null,
+        "price_change_percentage": {
+          "m5": "0",
+          "m15": "0",
+          "m30": "0",
+          "h1": "0",
+          "h6": "0.43",
+          "h24": "1.04"
+        },
+        "transactions": {
+          "m5": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m15": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "m30": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0,
+            "buyers": 0,
+            "sellers": 0
+          },
+          "h6": {
+            "buys": 1,
+            "sells": 1,
+            "buyers": 1,
+            "sellers": 1
+          },
+          "h24": {
+            "buys": 3,
+            "sells": 3,
+            "buyers": 1,
+            "sellers": 2
+          }
+        },
+        "volume_usd": {
+          "m5": "0.0",
+          "m15": "0.0",
+          "m30": "0.0",
+          "h1": "0.0",
+          "h6": "11.0203351202",
+          "h24": "34.2803239361"
+        },
+        "reserve_in_usd": "74065.4416"
+      },
+      "relationships": {
+        "base_token": {
+          "data": {
+            "id": "sui-network_0xf077de46d7613e4d2bdc6b70330ba61f2287b49e8328eadf7dc445f302250b36::paf::PAF",
+            "type": "token"
+          }
+        },
+        "quote_token": {
+          "data": {
+            "id": "sui-network_0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+            "type": "token"
+          }
+        },
+        "dex": {
+          "data": {
+            "id": "cetus",
+            "type": "dex"
+          }
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "id": "sui-network_0x9942d28b9db64aea8a6641194387109b04a2f58f4d3054b899b424382976b70b::coochie::COOCHIE",
+      "type": "token",
+      "attributes": {
+        "address": "0x9942d28b9db64aea8a6641194387109b04a2f58f4d3054b899b424382976b70b::coochie::COOCHIE",
+        "name": "COOCHIE",
+        "symbol": "COOCHIE",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/bqfjjn2mn8mwfs9hxovy04ofju9z",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0x2::sui::SUI",
+      "type": "token",
+      "attributes": {
+        "address": "0x2::sui::SUI",
+        "name": "Sui",
+        "symbol": "SUI",
+        "decimals": 9,
+        "image_url": "https://coin-images.coingecko.com/coins/images/26375/large/sui-ocean-square.png?1727791290",
+        "coingecko_coin_id": "sui"
+      }
+    },
+    {
+      "id": "cetus",
+      "type": "dex",
+      "attributes": {
+        "name": "Cetus"
+      }
+    },
+    {
+      "id": "sui-network_0xfe3afec26c59e874f3c1d60b8203cb3852d2bb2aa415df9548b8d688e6683f93::alpha::ALPHA",
+      "type": "token",
+      "attributes": {
+        "address": "0xfe3afec26c59e874f3c1d60b8203cb3852d2bb2aa415df9548b8d688e6683f93::alpha::ALPHA",
+        "name": "ALPHA Token",
+        "symbol": "ALPHA",
+        "decimals": 9,
+        "image_url": "https://coin-images.coingecko.com/coins/images/39087/large/Alpha_Logo_200_200.png?1720460811",
+        "coingecko_coin_id": "alpha-fi"
+      }
+    },
+    {
+      "id": "sui-network_0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+      "type": "token",
+      "attributes": {
+        "address": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+        "name": "USDC",
+        "symbol": "USDC",
+        "decimals": 6,
+        "image_url": "https://coin-images.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+        "coingecko_coin_id": "usd-coin"
+      }
+    },
+    {
+      "id": "sui-network_0x343b9a28b9b187a8de956eedd9a1284698440c90854d5854383bebe3b01d0663::strat::STRAT",
+      "type": "token",
+      "attributes": {
+        "address": "0x343b9a28b9b187a8de956eedd9a1284698440c90854d5854383bebe3b01d0663::strat::STRAT",
+        "name": "STRATTON",
+        "symbol": "STRAT",
+        "decimals": 6,
+        "image_url": "https://assets.geckoterminal.com/yusyw1n6uyuae6i6l2pthl7hqce3",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0xae9c887fcb56d71e3cf491abb6a54dde3d186ee4e3c75ff910e26c1c35352b66::grokstudio::GROKSTUDIO",
+      "type": "token",
+      "attributes": {
+        "address": "0xae9c887fcb56d71e3cf491abb6a54dde3d186ee4e3c75ff910e26c1c35352b66::grokstudio::GROKSTUDIO",
+        "name": "Grok Studio",
+        "symbol": "GROKSTUDIO",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/83luz3b9g3gtuziodzgkpcdqgg3m",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0xf6262a1bbd860dce8cf24542ecc30eb0818cdd59d2fcdd9c0da331e0d40d85b8::spencer::SPENCER",
+      "type": "token",
+      "attributes": {
+        "address": "0xf6262a1bbd860dce8cf24542ecc30eb0818cdd59d2fcdd9c0da331e0d40d85b8::spencer::SPENCER",
+        "name": "Spencer",
+        "symbol": "SPENCER",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/4bsbqjt29zn07pyc4pan0nqd26qg",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0x5df2dbcace078f6a0ada04cfac61687c60cb677b406cab6d5ceee5024ca9350b::stg_08::STG_08",
+      "type": "token",
+      "attributes": {
+        "address": "0x5df2dbcace078f6a0ada04cfac61687c60cb677b406cab6d5ceee5024ca9350b::stg_08::STG_08",
+        "name": "STG_08",
+        "symbol": "STG_08",
+        "decimals": 6,
+        "image_url": "https://assets.geckoterminal.com/0q4zr9s82945ayb0oz80h4fivruv",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL",
+      "type": "token",
+      "attributes": {
+        "address": "0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL",
+        "name": "WAL Token",
+        "symbol": "WAL",
+        "decimals": 9,
+        "image_url": "https://coin-images.coingecko.com/coins/images/54914/large/WAL_logo.png?1742494301",
+        "coingecko_coin_id": "walrus-2"
+      }
+    },
+    {
+      "id": "sui-network_0x21138163470dfcac8642b2a210dd5e60a48e66e99ed96ad87352e7741fa27b25::qd::QD",
+      "type": "token",
+      "attributes": {
+        "address": "0x21138163470dfcac8642b2a210dd5e60a48e66e99ed96ad87352e7741fa27b25::qd::QD",
+        "name": "QauDuM Coin",
+        "symbol": "Qd",
+        "decimals": 6,
+        "image_url": null,
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0xdf18c662f6d463a75d45848d366a3b339db97b10d62abdfd6584068df8e2b161::fitcoin::FITCOIN",
+      "type": "token",
+      "attributes": {
+        "address": "0xdf18c662f6d463a75d45848d366a3b339db97b10d62abdfd6584068df8e2b161::fitcoin::FITCOIN",
+        "name": "fitcoin",
+        "symbol": "fitcoin",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/stdrfljo8n7ns1eaij7l4prv250n",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0xf077de46d7613e4d2bdc6b70330ba61f2287b49e8328eadf7dc445f302250b36::paf::PAF",
+      "type": "token",
+      "attributes": {
+        "address": "0xf077de46d7613e4d2bdc6b70330ba61f2287b49e8328eadf7dc445f302250b36::paf::PAF",
+        "name": "PAD",
+        "symbol": "PAF",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/xr55j4xb834p6zrybqt1hmnvkeht",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "turbos-finance",
+      "type": "dex",
+      "attributes": {
+        "name": "Turbos Finance"
+      }
+    },
+    {
+      "id": "sui-network_0xb4bc93ad1a07fe47943fc4d776fed31ce31923acb5bc9f92d2cab14d01fc06a4::ROCK::ROCK",
+      "type": "token",
+      "attributes": {
+        "address": "0xb4bc93ad1a07fe47943fc4d776fed31ce31923acb5bc9f92d2cab14d01fc06a4::ROCK::ROCK",
+        "name": "Rockee AI",
+        "symbol": "ROCK",
+        "decimals": 6,
+        "image_url": "https://coin-images.coingecko.com/coins/images/54375/large/LOGO_%281%29.png?1739430316",
+        "coingecko_coin_id": "rockee-ai"
+      }
+    },
+    {
+      "id": "sui-network_0x5d1f47ea69bb0de31c313d7acf89b890dbb8991ea8e03c6c355171f84bb1ba4a::turbos::TURBOS",
+      "type": "token",
+      "attributes": {
+        "address": "0x5d1f47ea69bb0de31c313d7acf89b890dbb8991ea8e03c6c355171f84bb1ba4a::turbos::TURBOS",
+        "name": "Turbos",
+        "symbol": "TURBOS",
+        "decimals": 9,
+        "image_url": "https://coin-images.coingecko.com/coins/images/30349/large/ggut-eKC_400x400.jpg?1696529249",
+        "coingecko_coin_id": "turbos-finance"
+      }
+    },
+    {
+      "id": "sui-network_0x165c645488e7b780a6af94558666188580320d0b0082e7a5b23e7e97c9efbf7c::troll::TROLL",
+      "type": "token",
+      "attributes": {
+        "address": "0x165c645488e7b780a6af94558666188580320d0b0082e7a5b23e7e97c9efbf7c::troll::TROLL",
+        "name": "TROLLFACE",
+        "symbol": "TROLL",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/kdxsernafi40xv99mlwppxv03b09",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0x6a43338048ffd15c443fa43c3bc0dd55af048bff21760a573e0e02315332a1e4::shia::SHIA",
+      "type": "token",
+      "attributes": {
+        "address": "0x6a43338048ffd15c443fa43c3bc0dd55af048bff21760a573e0e02315332a1e4::shia::SHIA",
+        "name": "Shiba Saga",
+        "symbol": "SHIA",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/vbe8ygkn112pxllyg7g1pyckh676",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0x3a22333c7b3176dd2b1283366b0f09eb22da532f1160af30d6dbd9a8f4b0bfc0::skins::SKINS",
+      "type": "token",
+      "attributes": {
+        "address": "0x3a22333c7b3176dd2b1283366b0f09eb22da532f1160af30d6dbd9a8f4b0bfc0::skins::SKINS",
+        "name": "FORTNITIFY",
+        "symbol": "SKINS",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/v9v21jl1mh0g4mo2pn1glfht4ans",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0xe12338ddc8a3b0b4301b2bf9f712d4c745e3b7dba1c0bdc1d274b7e7d85ee3f3::revi::REVI",
+      "type": "token",
+      "attributes": {
+        "address": "0xe12338ddc8a3b0b4301b2bf9f712d4c745e3b7dba1c0bdc1d274b7e7d85ee3f3::revi::REVI",
+        "name": "Retard Vitalik",
+        "symbol": "REVI",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/a8lpwh95l1ge4y9wsbg77ov9sgs5",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0x5ece5fae4facca0e691f2d77b41e335afed589e303b710a0d6c59fd6b6da4ddb::xai::XAI",
+      "type": "token",
+      "attributes": {
+        "address": "0x5ece5fae4facca0e691f2d77b41e335afed589e303b710a0d6c59fd6b6da4ddb::xai::XAI",
+        "name": "X vs Open AI",
+        "symbol": "XAI",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/wy0f8n4m9jd4dtvdvhs9kkwv1mn4",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0xd7960d99df68b146f321c8ed52db36634658aed8873a5c115cc985363227fa89::mugify::MUGIFY",
+      "type": "token",
+      "attributes": {
+        "address": "0xd7960d99df68b146f321c8ed52db36634658aed8873a5c115cc985363227fa89::mugify::MUGIFY",
+        "name": "mugification",
+        "symbol": "MUGIFY",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/oxy3jfcxzhu93lzv8ne47slr8ne6",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0xe06971d271f5691ddeddd617416aa991438caba8eec79ba66cdbe5dce0f235c7::suiey::SUIEY",
+      "type": "token",
+      "attributes": {
+        "address": "0xe06971d271f5691ddeddd617416aa991438caba8eec79ba66cdbe5dce0f235c7::suiey::SUIEY",
+        "name": "SUIey",
+        "symbol": "SUIEY",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/6luapcdyw8n1fbzstvb4egw0aapj",
+        "coingecko_coin_id": null
+      }
+    },
+    {
+      "id": "sui-network_0x82f164c1bb5b3ecad0a3c8c705802abb783d7b77b0f69d090cfd1c93795c0ac6::richie::RICHIE",
+      "type": "token",
+      "attributes": {
+        "address": "0x82f164c1bb5b3ecad0a3c8c705802abb783d7b77b0f69d090cfd1c93795c0ac6::richie::RICHIE",
+        "name": "Richie Rich",
+        "symbol": "RICHIE",
+        "decimals": 9,
+        "image_url": "https://assets.geckoterminal.com/chj5oyngsd2ijo5kry1f8m8t5kkk",
+        "coingecko_coin_id": null
+      }
+    }
+  ]
+}
