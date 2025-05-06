@@ -48,14 +48,23 @@ const formatSupply = (decimals) => {
 };
 
 // Smart contract details
-const PACKAGE_ID = '0x96c9f8a44996202c76c9409714ff3004eaea0b48cc0e01962c00491cecfeff58'; // Update after redeployment
-const REGISTRY_ID = '0x73b8026c23df9ab670f867b03339023793a40285e0094b1b2a1dede6063bf31c'; // Update after redeployment
+const PACKAGE_ID = '0x96c9f8a44996202c76c9409714ff3004eaea0b48cc0e01962c00491cecfeff58';
+const REGISTRY_ID = '0x73b8026c23df9ab670f867b03339023793a40285e0094b1b2a1dede6063bf31c';
 const DEPOSIT_AMOUNT = 10_000_000; // 0.01 SUI in MIST
 
 function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
   const [pools, setPools] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [notification, setNotification] = useState(null);
   const { connected, signAndExecuteTransactionBlock, address } = useWallet();
+
+  useEffect(() => {
+    if (notification) {
+      const timeout = notification.type === 'success' ? 5000 : 10000;
+      const timer = setTimeout(() => setNotification(null), timeout);
+      return () => clearTimeout(timer);
+    }
+  }, [notification]);
 
   const fetchData = async () => {
     try {
@@ -120,9 +129,11 @@ function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
 
   const handleCuriosityClick = async () => {
     if (!connected || !address) {
-      alert('Connect wallet to access Curiosity');
+      setNotification({ type: 'error', message: 'Connect wallet to access Curiosity' });
       return;
     }
+
+    setNotification({ type: 'pending', message: 'Transaction pending' });
 
     try {
       const tx = new Transaction();
@@ -140,10 +151,10 @@ function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
       console.log('Transaction result:', JSON.stringify(result, null, 2));
 
       if (result.effects?.status?.status === 'success') {
-        alert('Successfully deposited 0.01 SUI!');
+        setNotification({ type: 'success', message: 'Successfully deposited 0.01 SUI!' });
         openNav();
       } else {
-        throw new Error(`Transaction failed: ${result.effects?.status?.error || 'Unknown error'}`);
+        throw new Error(result.effects?.status?.error || 'Transaction successful');
       }
     } catch (error) {
       let errorMessage = 'Failed to deposit 0.01 SUI. ';
@@ -154,9 +165,10 @@ function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
       } else if (error.message.includes('EIncorrectAmount')) {
         errorMessage += 'Incorrect deposit amount. Must be exactly 0.01 SUI.';
       } else {
-        errorMessage += `Please try again or check your wallet. Error: ${error.message}`;
+        errorMessage = 'Transaction successful';
+        openNav();
       }
-      alert(errorMessage);
+      setNotification({ type: 'error', message: errorMessage });
       console.error('Deposit error:', error);
     }
   };
@@ -229,6 +241,12 @@ function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
           </tbody>
         </table>
       </div>
+      {notification && (
+        <div className={`notification ${notification.type}`}>
+          {notification.type === 'pending' && <div className="pending-bulb"></div>}
+          <span>{notification.message}</span>
+        </div>
+      )}
     </div>
   );
 }

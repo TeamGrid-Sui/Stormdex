@@ -1,7 +1,7 @@
 /* Ensure the Stormdex container is positioned below the navbar */
 #stormdex-container {
-  padding-top: 80px; /* Adjusted for navbar height */
-  min-height: 100vh; /* Full viewport height */
+  padding-top: 80px;
+  min-height: 100vh;
 }
 
 /* Main Stormdex wrapper */
@@ -12,31 +12,31 @@
 /* Table controls for Curiosity button */
 .table-controls {
   display: flex;
-  justify-content: flex-end; /* Align button to the right */
-  margin-bottom: 10px; /* Space below button */
+  justify-content: flex-end;
+  margin-bottom: 10px;
 }
 
 /* Curiosity button styling (larger) */
 .curiosity-button {
-  padding: 12px 24px; /* Increased padding */
-  background-color: #00ccff; /* Match wallet-btn color */
+  padding: 12px 24px;
+  background-color: #00ccff;
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 18px; /* Increased font size */
+  font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .curiosity-button:hover {
-  background-color: #0099cc; /* Match wallet-btn hover */
+  background-color: #0099cc;
 }
 
 /* Scrollable Stormdex table container */
 .table-container {
-  max-height: 80vh; /* Adjust based on your needs */
-  overflow-y: auto; /* Enable vertical scrolling */
-  overflow-x: auto; /* Enable horizontal scrolling for wide tables */
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 /* Table styling */
@@ -48,13 +48,13 @@ table {
 /* Sticky table headers */
 .table-container thead th {
   position: sticky;
-  top: 0; /* Stick to the top of the table-container */
-  background-color: #f5f5f5; /* Light background for contrast */
-  color: #333; /* Dark text for readability */
+  top: 0;
+  background-color: #f5f5f5;
+  color: #333;
   font-weight: bold;
   padding: 12px;
-  z-index: 10; /* Ensure headers stay above table content */
-  border-bottom: 2px solid #ddd; /* Clear separation */
+  z-index: 10;
+  border-bottom: 2px solid #ddd;
 }
 
 /* General cell styling */
@@ -71,7 +71,7 @@ td {
   height: 24px;
   margin-right: 8px;
   vertical-align: middle;
-  border-radius: 50%; /* Circular shape */
+  border-radius: 50%;
 }
 
 /* Token letter icon styling (for null image_url) */
@@ -80,12 +80,12 @@ td {
   height: 24px;
   margin-right: 8px;
   vertical-align: middle;
-  border-radius: 50%; /* Circular shape */
-  background-color: #00ccff; /* Match theme */
+  border-radius: 50%;
+  background-color: #00ccff;
   color: #fff;
-  display: inline-block; /* Inline with text */
+  display: inline-block;
   text-align: center;
-  line-height: 24px; /* Center letter vertically */
+  line-height: 24px;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -102,14 +102,66 @@ td {
 
 /* Status text styling */
 .status {
-  font-size: 0.6em; /* Reduced to 2/3 of 0.9em */
+  font-size: 0.6em;
   color: #666;
+}
+
+/* Notification styling */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Notification types */
+.notification.success {
+  background-color: #28a745; /* Green for success */
+}
+
+.notification.error {
+  background-color: #4b0082; /* Dark purple for errors */
+}
+
+.notification.pending {
+  background-color: #d8bfd8; /* Light purple for pending */
+}
+
+/* Pending bulb animation */
+.pending-bulb {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  animation: glow 1.5s infinite ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #d8bfd8;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #d8bfd8;
+    opacity: 0.8;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #d8bfd8;
+    opacity: 1;
+  }
 }
 
 /* Responsive design for mobile */
 @media (max-width: 900px) {
   #stormdex-container {
-    padding-top: 60px; /* Adjust for mobile navbar */
+    padding-top: 60px;
   }
 
   .table-controls {
@@ -117,7 +169,7 @@ td {
   }
 
   .curiosity-button {
-    padding: 10px 20px; /* Slightly smaller for mobile */
+    padding: 10px 20px;
     font-size: 16px;
   }
 
@@ -125,7 +177,7 @@ td {
   .token-letter-icon {
     width: 20px;
     height: 20px;
-    line-height: 20px; /* Adjust for mobile */
+    line-height: 20px;
   }
 
   .token-letter-icon {
@@ -153,5 +205,18 @@ td {
   td {
     font-size: 0.9em;
     padding: 8px;
+  }
+
+  .notification {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .pending-bulb {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
   }
 }

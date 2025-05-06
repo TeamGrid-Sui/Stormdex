@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2023 STORMDEX. All rights reserved.</p>
+      <p>&copy; Stormdex </p>
     </footer>
   );
 }
