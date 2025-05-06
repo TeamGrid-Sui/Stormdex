@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './Stormdex.css';
+import { useWallet } from '@suiet/wallet-kit';
+import { Transaction } from '@mysten/sui/transactions';
+import { createSuiClient } from '@shinami/clients/sui';
 
-// Utility function to calculate time ago
+// Shinami Node Service setup
+const SHINAMI_NODE_ACCESS_KEY = process.env.REACT_APP_SHINAMI_NODE_KEY;
+if (!SHINAMI_NODE_ACCESS_KEY) {
+  console.error('Shinami Node API key is missing. Please set REACT_APP_SHINAMI_NODE_KEY in .env');
+  throw new Error('Shinami Node API key is missing');
+}
+const nodeClient = createSuiClient(SHINAMI_NODE_ACCESS_KEY);
+
+// Utility functions (unchanged)
 const timeAgo = (dateString) => {
   const date = new Date(dateString);
   const now = new Date();
   const diffInSeconds = Math.floor((now - date) / 1000);
-
   if (diffInSeconds < 60) return `${diffInSeconds}s`;
   const diffInMinutes = Math.floor(diffInSeconds / 60);
   if (diffInMinutes < 60) return `${diffInMinutes}m`;
@@ -16,7 +26,6 @@ const timeAgo = (dateString) => {
   return `${diffInDays}d`;
 };
 
-// Utility function to format FDV (MCAP)
 const formatFDV = (fdv) => {
   if (!fdv) return 'N/A';
   const num = parseFloat(fdv);
@@ -25,10 +34,8 @@ const formatFDV = (fdv) => {
   return `$${num.toFixed(0)}`;
 };
 
-// Utility function to format SUPPLY based on decimals
 const formatSupply = (decimals) => {
   if (!decimals && decimals !== 0) return 'N/A';
-  const value = Math.pow(10, decimals);
   if (decimals === 0) return '10';
   if (decimals === 3) return '1K';
   if (decimals === 4) return '10K';
@@ -37,50 +44,40 @@ const formatSupply = (decimals) => {
   if (decimals === 7) return '10M';
   if (decimals === 8) return '100M';
   if (decimals === 9) return '1B';
-  return `10^${decimals}`; // Fallback for other values
+  return `10^${decimals}`;
 };
+
+// Smart contract details
+const PACKAGE_ID = '0x96c9f8a44996202c76c9409714ff3004eaea0b48cc0e01962c00491cecfeff58'; // Update after redeployment
+const REGISTRY_ID = '0x73b8026c23df9ab670f867b03339023793a40285e0094b1b2a1dede6063bf31c'; // Update after redeployment
+const DEPOSIT_AMOUNT = 10_000_000; // 0.01 SUI in MIST
 
 function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
   const [pools, setPools] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { connected, signAndExecuteTransactionBlock, address } = useWallet();
 
   const fetchData = async () => {
     try {
-      // Fetch page 1
       const response1 = await fetch(
         'https://api.geckoterminal.com/api/v2/networks/sui-network/new_pools?include=base_token&page=1',
-        {
-          headers: {
-            'Accept': 'application/json',
-          },
-        }
+        { headers: { Accept: 'application/json' } }
       );
       const data1 = await response1.json();
 
-      // Fetch page 2
       const response2 = await fetch(
         'https://api.geckoterminal.com/api/v2/networks/sui-network/new_pools?include=base_token&page=2',
-        {
-          headers: {
-            'Accept': 'application/json',
-          },
-        }
+        { headers: { Accept: 'application/json' } }
       );
       const data2 = await response2.json();
 
-      // Combine pool data
       const poolData = [...data1.data, ...data2.data];
-
-      // Combine and deduplicate included tokens by id
       const includedMap = new Map();
       [...(data1.included || []), ...(data2.included || [])].forEach((item) => {
-        if (item.type === 'token') {
-          includedMap.set(item.id, item);
-        }
+        if (item.type === 'token') includedMap.set(item.id, item);
       });
       const included = Array.from(includedMap.values());
 
-      // Create a map of token IDs to token data
       const tokenMap = {};
       included.forEach((item) => {
         if (item.type === 'token') {
@@ -92,28 +89,18 @@ function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
         }
       });
 
-      // Map pool data to table rows
       const mappedPools = poolData.map((pool) => {
         const tokenId = pool.relationships.base_token.data.id;
         const tokenData = tokenMap[tokenId] || {};
-        const imageUrl = tokenData.image_url || null;
-        const name = pool.attributes.name.split(' ')[0]; // First part of name
-        const createdAt = timeAgo(pool.attributes.pool_created_at);
-        const fdv = formatFDV(pool.attributes.fdv_usd);
-        const buysSells = `${pool.attributes.transactions.h24.buys} / ${pool.attributes.transactions.h24.sells}`;
-        const vol24h = `${pool.attributes.price_change_percentage.h24}%`;
-        const supply = formatSupply(tokenData.decimals);
-        const tokenName = tokenData.name; // For letter icon
-
         return {
-          name,
-          imageUrl,
-          createdAt,
-          fdv,
-          buysSells,
-          vol24h,
-          supply,
-          tokenName,
+          name: pool.attributes.name.split(' ')[0],
+          imageUrl: tokenData.image_url || null,
+          createdAt: timeAgo(pool.attributes.pool_created_at),
+          fdv: formatFDV(pool.attributes.fdv_usd),
+          buysSells: `${pool.attributes.transactions.h24.buys} / ${pool.attributes.transactions.h24.sells}`,
+          vol24h: `${pool.attributes.price_change_percentage.h24}%`,
+          supply: formatSupply(tokenData.decimals),
+          tokenName: tokenData.name,
         };
       });
 
@@ -126,17 +113,51 @@ function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
   };
 
   useEffect(() => {
-    fetchData(); // Initial fetch
-    const interval = setInterval(fetchData, 10000); // Refresh every 10 seconds
-
-    return () => clearInterval(interval); // Clear interval on unmount
+    fetchData();
+    const interval = setInterval(fetchData, 10000);
+    return () => clearInterval(interval);
   }, []);
 
-  const handleCuriosityClick = () => {
-    if (isSidenavOpen) {
-      closeNav();
-    } else {
-      openNav();
+  const handleCuriosityClick = async () => {
+    if (!connected || !address) {
+      alert('Connect wallet to access Curiosity');
+      return;
+    }
+
+    try {
+      const tx = new Transaction();
+      const [coin] = tx.splitCoins(tx.gas, [DEPOSIT_AMOUNT]);
+      tx.moveCall({
+        target: `${PACKAGE_ID}::deposit::deposit`,
+        arguments: [coin, tx.object(REGISTRY_ID)],
+      });
+
+      const result = await signAndExecuteTransactionBlock({
+        transactionBlock: tx,
+        options: { showEffects: true },
+      });
+
+      console.log('Transaction result:', JSON.stringify(result, null, 2));
+
+      if (result.effects?.status?.status === 'success') {
+        alert('Successfully deposited 0.01 SUI!');
+        openNav();
+      } else {
+        throw new Error(`Transaction failed: ${result.effects?.status?.error || 'Unknown error'}`);
+      }
+    } catch (error) {
+      let errorMessage = 'Failed to deposit 0.01 SUI. ';
+      if (error.message.includes('InsufficientGas')) {
+        errorMessage += 'Insufficient gas in your wallet.';
+      } else if (error.message.includes('Balance')) {
+        errorMessage += 'Insufficient SUI balance. Ensure you have at least 0.01 SUI plus gas.';
+      } else if (error.message.includes('EIncorrectAmount')) {
+        errorMessage += 'Incorrect deposit amount. Must be exactly 0.01 SUI.';
+      } else {
+        errorMessage += `Please try again or check your wallet. Error: ${error.message}`;
+      }
+      alert(errorMessage);
+      console.error('Deposit error:', error);
     }
   };
 
@@ -146,7 +167,6 @@ function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
 
   return (
     <div className="stormdex">
-      {/* Curiosity Button */}
       <div className="table-controls">
         <button
           className="curiosity-button"
@@ -156,8 +176,6 @@ function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
           Curiosity
         </button>
       </div>
-
-      {/* Stormdex Table */}
       <div className="table-container">
         <table>
           <thead>
@@ -187,9 +205,7 @@ function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
                   </td>
                   <td data-label="CREATED">{pool.createdAt}</td>
                   <td data-label="MCAP">{pool.fdv}</td>
-                  <td data-label="LIQUIDITY">
-                    {/* Placeholder for future implementation */}
-                  </td>
+                  <td data-label="LIQUIDITY">{/* Placeholder */}</td>
                   <td data-label="SUPPLY">{pool.supply}</td>
                   <td data-label="BUYS/SELLS">{pool.buysSells}</td>
                   <td
