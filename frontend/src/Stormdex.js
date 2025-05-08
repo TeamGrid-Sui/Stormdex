@@ -128,50 +128,44 @@ function Stormdex({ openNav, closeNav, isSidenavOpen, curiosityButtonRef }) {
   }, []);
 
   const handleCuriosityClick = async () => {
-    if (!connected || !address) {
-      setNotification({ type: 'error', message: 'Connect wallet to access Curiosity' });
-      return;
-    }
+  if (!connected || !address) {
+    setNotification({ type: 'error', message: 'Connect wallet to access Curiosity' });
+    return;
+  }
 
-    setNotification({ type: 'pending', message: 'Transaction pending' });
+  setNotification({ type: 'pending', message: 'Transaction pending' });
 
-    try {
-      const tx = new Transaction();
-      const [coin] = tx.splitCoins(tx.gas, [DEPOSIT_AMOUNT]);
-      tx.moveCall({
-        target: `${PACKAGE_ID}::deposit::deposit`,
-        arguments: [coin, tx.object(REGISTRY_ID)],
-      });
+  try {
+    const tx = new Transaction();
+    const [coin] = tx.splitCoins(tx.gas, [DEPOSIT_AMOUNT]);
+    tx.moveCall({
+      target: `${PACKAGE_ID}::deposit::deposit`,
+      arguments: [coin, tx.object(REGISTRY_ID)],
+    });
 
-      const result = await signAndExecuteTransactionBlock({
-        transactionBlock: tx,
-        options: { showEffects: true },
-      });
+    const result = await signAndExecuteTransactionBlock({
+      transactionBlock: tx,
+      options: { showEffects: true },
+    });
 
-      console.log('Transaction result:', JSON.stringify(result, null, 2));
+    console.log('Transaction result:', JSON.stringify(result, null, 2));
+    setNotification({ type: 'success', message: 'Successfully deposited 0.01 SUI!' });
+    openNav();
+  } catch (error) {
+    // Extract the exact error message
+    const errorMessage = error.message || 'Unknown error';
+    
+    // Log the exact error message to the console
+    console.error('Shinami API error:', errorMessage);
+    
+    // Display the exact error message in the UI
+    setNotification({
+      type: 'error',
+      message: `Failed to deposit 0.01 SUI. Error: ${errorMessage}`,
+    });
+  }
+};
 
-      if (result.effects?.status?.status === 'success') {
-        setNotification({ type: 'success', message: 'Successfully deposited 0.01 SUI!' });
-        openNav();
-      } else {
-        throw new Error(result.effects?.status?.error || 'Transaction successful');
-      }
-    } catch (error) {
-      let errorMessage = 'Failed to deposit 0.01 SUI. ';
-      if (error.message.includes('InsufficientGas')) {
-        errorMessage += 'Insufficient gas in your wallet.';
-      } else if (error.message.includes('Balance')) {
-        errorMessage += 'Insufficient SUI balance. Ensure you have at least 0.01 SUI plus gas.';
-      } else if (error.message.includes('EIncorrectAmount')) {
-        errorMessage += 'Incorrect deposit amount. Must be exactly 0.01 SUI.';
-      } else {
-        errorMessage = 'Transaction successful';
-        openNav();
-      }
-      setNotification({ type: 'error', message: errorMessage });
-      console.error('Deposit error:', error);
-    }
-  };
 
   if (loading) {
     return <div>Loading...</div>;

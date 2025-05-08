@@ -159,9 +159,9 @@ td {
 }
 
 /* Responsive design for mobile */
-@media (max-width: 900px) {
+@media (max-width: 100px) {
   #stormdex-container {
-    padding-top: 60px;
+    padding-top: 10px;
   }
 
   .table-controls {
@@ -208,10 +208,12 @@ td {
   }
 
   .notification {
-    bottom: 10px;
+    position: fixed;
+    top: 10px; /* Changed from bottom to top */
     right: 10px;
     padding: 8px 16px;
     font-size: 0.9em;
+    z-index: 1000; /* Ensure it floats above content */
   }
 
   .pending-bulb {
