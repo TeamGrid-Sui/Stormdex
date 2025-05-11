@@ -67,6 +67,7 @@
 @media (max-width: 900px) {
   .navbar-toggler {
     display: block;
+    margin-right: 50px;
   }
 
   .nav-links {

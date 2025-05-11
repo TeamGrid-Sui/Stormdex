@@ -4,9 +4,47 @@
   min-height: 100vh;
 }
 
+
+.chart-container {
+  width: 30%;
+  max-width: 600px;
+  margin: 5px auto;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.chart-loading,
+.chart-error {
+  text-align: center;
+  padding: 5px;
+  color: #666;
+  font-size: 12px;
+}
+
+.table-container tbody tr td {
+  vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    max-width: 100%;
+    padding: 3px;
+  }
+
+  .chart-container .apexcharts-canvas {
+    width: 100% !important;
+  }
+}
+
+
 /* Main Stormdex wrapper */
 .stormdex {
   padding: 20px;
+}
+
+.thin-line {
+  height: 1px;
+  background-color: white; /* Light gray, subtle color */
 }
 
 /* Table controls for Curiosity button */
@@ -210,7 +248,7 @@ td {
   .notification {
     position: fixed;
     top: 10px; /* Changed from bottom to top */
-    right: 10px;
+    left: 10px;
     padding: 8px 16px;
     font-size: 0.9em;
     z-index: 1000; /* Ensure it floats above content */
@@ -221,4 +259,34 @@ td {
     height: 10px;
     margin-right: 8px;
   }
+}
+
+/* Token container for aligning icon, name, and copy icon */
+.token-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Copy icon styling */
+.copy-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  color: #666;
+}
+
+.copy-icon:hover {
+  color: #000;
+}
+
+/* Ensure notification can be absolutely positioned */
+.notification {
+  position: absolute; /* Changed from fixed */
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
 }
