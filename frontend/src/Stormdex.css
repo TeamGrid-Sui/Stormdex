@@ -2,6 +2,8 @@
 #stormdex-container {
   padding-top: 80px;
   min-height: 100vh;
+  background-color: rgb(9, 7, 12);
+  color: white;
 }
 
 
@@ -44,7 +46,7 @@
 
 .thin-line {
   height: 1px;
-  background-color: white; /* Light gray, subtle color */
+  background-color: #5b139b; /* Light gray, subtle color */
 }
 
 /* Table controls for Curiosity button */
@@ -57,7 +59,7 @@
 /* Curiosity button styling (larger) */
 .curiosity-button {
   padding: 12px 24px;
-  background-color: #00ccff;
+  background-color: #5B139B;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -87,12 +89,12 @@ table {
 .table-container thead th {
   position: sticky;
   top: 0;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #25013F;
+  color: #F36BFF;
   font-weight: bold;
   padding: 12px;
   z-index: 10;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #5B139B;
 }
 
 /* General cell styling */
@@ -100,7 +102,7 @@ th,
 td {
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0px solid #000;
 }
 
 /* Token icon styling */
@@ -124,7 +126,7 @@ td {
   display: inline-block;
   text-align: center;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -289,4 +291,214 @@ td {
   align-items: center;
   z-index: 1000;
   transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.mini-chart-container {
+  width: 100px; /* Adjust as needed */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-loading {
+  font-size: 12px;
+  color: #666;
+}
+
+.chart-error {
+  font-size: 12px;
+  color: #ff0000;
+}
+
+
+.traders-buyers {
+  color: green;
+}
+
+.traders-sellers {
+  color: red;
+}
+
+
+
+
+.audit-pie-chart {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mini-chart-container {
+  width: 60px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.chart-loading,
+.chart-error {
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+
+.table-container {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+
+
+
+
+
+
+/* Table controls (keep original) */
+.table-controls {
+  display: flex;
+  justify-content: flex-end; /* Keeps Curiosity button on the right */
+  margin-bottom: 10px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Centers horizontally */
+  display: inline-block;
+}
+
+.search-bar input {
+  padding: 8px 10px; /* Reduced for ~18px height (30% less than ~26px) */
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 350px; /* Fixed width, adjustable */
+  font-size: 12px; /* Reduced for smaller height */
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #00ccff; /* Matches Curiosity button color */
+  box-shadow: 0 0 5px rgba(0, 204, 255, 0.5);
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%; /* Matches search bar width */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 300px; /* Limits height, scrollable */
+  overflow-y: auto;
+  z-index: 2000; /* Higher to appear above table-container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-result {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border-bottom: 1px solid #700b0b;
+}
+
+.search-result:last-child {
+  border-bottom: none; /* No border on the last item */
+}
+
+.search-result img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.search-result .token-letter-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  background-color: #00ccff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.search-result .token-name {
+  flex: 1; /* Takes available space */
+  margin-right: 8px;
+  font-size: 12px;
+  color: #333;
+}
+
+.search-result .token-address {
+  font-size: 10px;
+  color: #666;
+  word-break: break-all; /* Ensures long addresses wrap */
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 7px;
+  color: #666;
+  font-size: 12px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 7px;
+  color: #666;
+  font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-bar {
+    position: static; /* Fallback to flex flow on mobile */
+    transform: none;
+    margin-bottom: 10px; /* Space above Curiosity button */
+  }
+
+  .search-bar input {
+    width: 200px; /* Smaller width on mobile */
+    padding: 4px 6px; /* Further reduced for mobile */
+    font-size: 9px;
+  }
+
+  .search-dropdown {
+    max-height: 150px; /* Unchanged from previous mobile adjustment */
+  }
+
+  .search-result img,
+  .search-result .token-letter-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .search-result .token-letter-icon {
+    font-size: 9px;
+  }
+
+  .search-result .token-name {
+    font-size: 11px;
+  }
+
+  .search-result .token-address {
+    font-size: 9px;
+  }
+
+  .loading-spinner,
+  .no-results {
+    font-size: 11px;
+  }
 }

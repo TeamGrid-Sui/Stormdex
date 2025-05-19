@@ -22,8 +22,9 @@ import Home from './Home';
 import Stormdex from './Stormdex';
 import Footer from './Footer';
 import './App.css';
-import { ConnectButton } from '@suiet/wallet-kit';
+//import { ConnectButton } from '@suiet/wallet-kit';
 import '@suiet/wallet-kit/style.css';
+import './suiet-wallet-kit-custom.css';
 
 function App() {
   const [isSidenavOpen, setIsSidenavOpen] = useState(false);

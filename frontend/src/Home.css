@@ -1,137 +1,336 @@
 .home {
-    padding-top: 80px; /* Space for fixed navbar */
-  }
-  
-  .explore {
+    padding-top: 70px; /* Space for fixed navbar */
+    background: linear-gradient(
+        to bottom right,
+        #000000,    
+        #421f61 20%,
+        #2d0a47 40%,
+        #3a253d 60%,
+        #180b1f 80%,
+        #000000
+    );
+    width: 100%; /* Ensure it takes full viewport width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+
+
+.explore {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #e0f7ff;
-  }
-  
-  .explore h1 {
-    font-size: 36px;
+    padding: 120px 20px 50px 20px; /* Symmetrical padding */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    opacity: 80%;
+    box-sizing: border-box; /* Include padding in width */.section {
+    text-align: center;
+    padding: 120px 20px 50px 20px; /* Symmetrical padding */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+}
+
+
+
+.explore h1 {
+    font-size: 46px;
     margin-bottom: 10px;
-  }
-  
-  .explore h5 {
-    font-size: 18px;
+    color: #F6EBFF;
+}
+
+.explore h5 {
+    font-size: 25px;
     margin-bottom: 20px;
-  }
-  
-  .explore-btn {
-    background-color: #00ccff;
+    color: #D4B9FE;
+}
+
+.explore-btn {
+    background-color: #5B139B;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
+    padding: 10px 50px;
+    font-size: 25px;
+    border-radius: 14px;
     transition: background-color 0.3s;
-  }
-  
-  .explore-btn:hover {
+}
+
+.explore-btn:hover {
     background-color: #0099cc;
-  }
-  
-  .section {
-    padding: 40px 20px;
+}
+
+.section {
+    padding: 30px 20px 90px 1px;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .section h2 {
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.section h2 {
     font-size: 32px;
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  .features {
+    color: #F6EBFF;
+}
+
+.section h3 {
+    color: #F6EBFF;
+}
+
+.section p {
+    color: #D4B9FE;
+}
+
+.features {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  
-  .feature-column {
+    width: 100%;
+    
+    padding: 10px, 0, 0, 100px;
+}
+
+.feature-column {
     flex: 1;
     min-width: 300px;
     padding: 10px;
-  }
-  
-  .feature {
-    margin-bottom: 20px;
-  }
-  
-  .feature h3 {
+     /* Include padding in width */
+}
+
+/* Rest of your CSS remains unchanged */
+.feature {
+    margin-bottom: 70px;
+    
+}
+
+.feature h3 {
     font-size: 20px;
     margin-bottom: 10px;
-  }
-  
-  .feature p {
+}
+
+.feature p {
     font-size: 16px;
     line-height: 1.5;
-  }
-  
-  .feature-img {
+}
+
+.feature-img {
     max-width: 100%;
     height: auto;
-  }
-  
-  .roadmap-content {
+}
+
+.roadmap-content {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-  }
-  
-  .roadmap-img {
+}
+
+/*.roadmap-img {
     max-width: 50%;
     height: auto;
     margin-right: 20px;
-  }
-  
-  .roadmap-text h3 {
+}*/
+
+.roadmap-text h3 {
     font-size: 20px;
     margin-bottom: 10px;
-  }
-  
-  .roadmap-text p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  .social-links {
+}
+
+.roadmap-text p {
+    font-size: 17px;
+    line-height: 2.9;
+}
+
+.social-links {
     text-align: center;
-  }
-  
-  .social-links a {
+}
+
+.social-links a {
     font-size: 24px;
     margin: 0 15px;
     color: #333;
     transition: color 0.3s;
-  }
-  
-  .social-links a:hover {
+}
+
+.social-links a:hover {
     color: #00ccff;
-  }
-  
-  @media (max-width: 900px) {
+}
+
+@media (max-width: 900px) {
     .explore h1 {
-      font-size: 28px;
+        font-size: 29px;
     }
-  
+
     .explore h5 {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     .section h2 {
-      font-size: 26px;
+        font-size: 23px;
     }
-  
+
+    .features {
+        align-items: center;
+        padding-left: 40px;
+    }
+
     .feature-column {
-      min-width: 100%;
+        min-width: 100%; /* Prevent overflow on small screens */
+        
     }
-  
+
     .roadmap-img {
-      max-width: 100%;
-      margin-right: 0;
-      margin-bottom: 20px;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
+
+    .roadmap-content {
+        padding-left: 40px;
+    }
+}
+
+
+.poweredby h2{
+    color: #D4B9FE;
+    margin-top: 100px;
+}
+
+
+
+/*.sponsors-div{
+    background-color: #0000008b;
+    padding: 1rem;
+}*/
+.sponsors{
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    font-style: bold;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.sponsors img{
+    width: 7.5rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.sponsors-div {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+@media (max-width: 900px) {
+  .sponsors-div {
+    margin-left: 50px;
+    margin-right: 50px;
   }
+}
+
+
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes video cover the container like a background image */
+  z-index: 5; /* Places video behind other content */
+  opacity: 0.5; /* Reduces video opacity (adjust between 0 and 1) */
+  margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+    .background-video {
+        opacity: 0.6;
+    }
+}
+.section-container {
+  position: relative; /* Establishes positioning context for the video */
+  width: 100%; /* Adjust as needed */
+  min-height: 400px; /* Set a minimum height for visibility */
+  overflow: hidden; /* Prevents video overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* For text visibility; adjust as needed */
+}
+
+
+/*.background-video2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes video cover the container like a background image */
+  /*z-index: 5; /* Places video behind other content */
+  /*opacity: 0.5; /* Reduces video opacity (adjust between 0 and 1) */
+  /*margin-top: 5px;
+}*/
+
+.roadmap2 {
+  position: relative; /* Establishes positioning context for the video */
+  width: 100%; /* Adjust as needed */
+  min-height: 400px; /* Set a minimum height for visibility */
+  overflow: hidden; /* Prevents video overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* For text visibility; adjust as needed */
+}
+
+
+
+
+
+
+/* AboutSection.css */
+.section {
+  text-align: left;
+  padding: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.fa-brands,
+.fa-solid {
+  font-size: 40px; /* Adjust size */
+  color: #333; /* Default color */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.fa-brands:hover,
+.fa-solid:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Optional: Specific colors */
+.fa-x-twitter {
+  color: #000; /* Black for X */
+}
+.fa-envelope {
+  color: #d14836; /* Red for Gmail */
+}
+.fa-github {
+  color: #333; /* Dark gray for GitHub */
+}
+

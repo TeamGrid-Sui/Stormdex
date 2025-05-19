@@ -1,10 +1,11 @@
 .navbar {
-  background-color: #1a1a1a;
-  padding: 15px 20px;
-  position: fixed; /* Keep navbar fixed */
+  background-color: #25013F;
+  opacity: 100%;
+  padding: 1px 10px;
+  position: fixed;
   width: 100%;
   top: 0;
-  z-index: 100; /* Above other content */
+  z-index: 100;
 }
 
 .nav-container {
@@ -15,9 +16,27 @@
   margin: 0 auto;
 }
 
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between toggler and brand-group on mobile */
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 1px; /* Space between icon and navbar-brand */
+}
+
+.icon {
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+}
+
 .navbar-brand {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -45,16 +64,13 @@
   font-size: 24px;
 }
 
-/* Styling for ConnectButton and title */
 .App {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-left: 20px;
 }
 
 .title.gradient {
-  font-size: 18px; /* Smaller for navbar */
+  font-size: 18px;
   background: linear-gradient(90deg, #00ccff, #0099cc);
   -webkit-background-clip: text;
   background-clip: text;
@@ -67,8 +83,15 @@
 @media (max-width: 900px) {
   .navbar-toggler {
     display: block;
-    margin-right: 50px;
   }
+
+  .navbar {
+    padding-bottom: 5px;
+  }
+
+  .navbar-brand {
+  font-size: 15px;
+}
 
   .nav-links {
     display: none;
@@ -77,8 +100,9 @@
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #1a1a1a;
+    background-color: #25013F;
     padding: 20px;
+    opacity: 60%;
   }
 
   .nav-links.show {
@@ -92,11 +116,18 @@
   }
 
   .App {
-    margin-left: 0;
-    margin-top: 10px;
+    /* No margins needed; flex handles positioning */
   }
 
   .title.gradient {
     font-size: 16px;
+  }
+
+  .icon {
+    width: 32px;
+  }
+
+  .brand-group {
+    gap: 3px; /* Smaller gap on mobile */
   }
 }

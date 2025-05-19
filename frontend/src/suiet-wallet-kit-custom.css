@@ -1,0 +1,42 @@
+:root {
+  --wkit-accent-hs: 210, 100%;
+  --wkit-on-accent-rgb: 255, 255, 255;
+  --wkit-bg-rgb: 239, 241, 245;
+  --wkit-on-bg-rgb: 10, 14, 34;
+  --wkit-font-family: 'Inter', sans-serif;
+  --wkit-font-family-mono: 'IBM Plex Mono', monospace;
+  --wkit-font-size-large: 18px;
+  --wkit-font-size-medium: 16px;
+  --wkit-font-size-small: 14px;
+  --wkit-line-height-large: 22px;
+  --wkit-line-height-medium: 20px;
+  --wkit-line-height-small: 17px;
+  --wkit-button-width: 260px;
+  --wkit-border-radius: 16px;
+}
+
+
+
+@media (max-width: 700px) {
+  :root {
+    --wkit-accent-hs: 166, 91%;
+    --wkit-on-accent-rgb: 255, 255, 255;
+    --wkit-bg-rgb: 40, 40, 40;
+    --wkit-on-bg-rgb: 91, 19, 155;
+    --wkit-button-width: 140px;
+
+  }
+  .wkit-button {
+    margin-right: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 7px 1px 7px 1px;
+  }
+  .wkit-button {
+    width: 90%;
+  }
+}
+
+.custom-connect {
+    background-color: #5B139B;
+}

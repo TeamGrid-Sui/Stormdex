@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./assets/fonts/fonnts.com-Aeonik-Bold.ttf') format('truetype'),
+       url('./assets/fonts/fonnts.com-Aeonik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
